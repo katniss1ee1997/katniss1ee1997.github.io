@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name | Consultant</title>
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: #111;
+    line-height: 1.6;
+}
+.container {
+    max-width: 760px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+h1 {
+    font-size: 32px;
+    font-weight: 500;
+}
+h2 {
+    font-size: 18px;
+    margin-top: 60px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #666;
+}
+p {
+    font-size: 16px;
+    margin: 20px 0;
+}
+.service {
+    margin: 30px 0;
+}
+.contact {
+    margin-top: 40px;
+}
+.footer {
+    margin-top: 80px;
+    font-size: 14px;
+    color: #999;
+}
+a {
+    color: #111;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Your Name</h1>
+<p>Independent Consultant</p>
+
+<h2>About</h2>
+<p>
+I provide structured, analytical consulting focused on clarity, direction and strategic decision-making.
+My work centers on helping individuals think clearly and move forward with intention.
+</p>
+
+<p>
+我提供结构化、理性且具战略思维的咨询服务，帮助个体建立清晰的判断与行动方向。
+</p>
+
+<h2>Services</h2>
+
+<div class="service">
+<strong>Strategic Clarity Consultation</strong><br>
+Clarifying goals, positioning and long-term direction.<br>
+目标梳理与长期方向规划。
+</div>
+
+<div class="service">
+<strong>Decision Framework Design</strong><br>
+Building rational models for complex personal decisions.<br>
+为复杂决策建立理性分析框架。
+</div>
+
+<div class="service">
+<strong>Personal System Structuring</strong><br>
+Designing sustainable personal development systems.<br>
+构建可持续的个人成长结构。
+</div>
+
+<h2>Contact</h2>
+<div class="contact">
+Email: your@email.com <br>
+WeChat: yourID <br>
+Instagram: @yourname
+</div>
+
+<div class="footer">
+© 2026 Your Name
+</div>
+
+</div>
+</body>
+</html>
