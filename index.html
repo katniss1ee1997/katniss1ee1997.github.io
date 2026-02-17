@@ -10,32 +10,45 @@
 body {
     margin: 0;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: linear-gradient(180deg, #ffffff 0%, #f7f7f7 100%);
+    background: #fafafa;
     color: #111;
-    line-height: 1.8;
+    line-height: 1.6;
     letter-spacing: 0.2px;
 }
-.container { max-width: 900px; margin: 0 auto; padding: 80px 24px; }
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 80px 24px;
+}
 
 /* Hero */
 h1 { font-size: 36px; font-weight: 500; margin-bottom: 8px; }
 .subtitle { font-size: 14px; text-transform: uppercase; letter-spacing: 2px; color: #777; }
-.hero-quote { margin-top: 24px; font-size: 18px; color: #333; line-height: 1.5; }
+.hero-quote { font-size: 18px; color: #333; line-height: 1.6; margin-top: 24px; }
+.hero-quote .cn { display: block; margin-top: 12px; max-width: 600px; }
 
-/* Section */
+/* Section Titles */
 .section { margin-top: 100px; }
 .section h2 { font-size: 14px; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-bottom: 36px; }
 
 /* About split */
 .about-container { display: flex; flex-wrap: wrap; gap: 24px; }
-.about-left, .about-right { flex: 1 1 300px; }
-p { margin: 16px 0; font-size: 16px; }
-.cn { color: #444; }
+.about-left, .about-right { flex: 1 1 320px; max-width: 100%; }
+.about-left p { max-width: 650px; line-height: 1.55; }
+.about-right p { max-width: 600px; line-height: 1.7; color: #444; }
 
-/* Services Cards */
-.services-grid { display: flex; flex-wrap: wrap; gap: 24px; }
-.service-card { flex: 1 1 260px; background: #fff; padding: 24px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s, opacity 0.6s; opacity: 0; transform: translateY(20px); }
-.service-card.visible { opacity: 1; transform: translateY(0); }
+/* Services / Flow / Testimonials Cards */
+.service-card, .flow-step, .testimonial-card {
+    flex: 1 1 260px;
+    background: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s, transform 0.6s;
+    min-height: 200px; /* 保持卡片高度一致 */
+}
 .service-card:hover { transform: translateY(-4px); box-shadow: 0 6px 18px rgba(0,0,0,0.1); }
 .service-title { font-weight: 500; font-size: 16px; margin-bottom: 8px; }
 
@@ -47,17 +60,13 @@ p { margin: 16px 0; font-size: 16px; }
 /* Contact */
 .contact-card { background: #f0f0f0; padding: 24px; border-radius: 12px; margin-top: 24px; }
 
-/* Consultation Flow */
-.flow-container { display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; margin-top: 24px; }
-.flow-step { flex: 1 1 250px; background: #fff; padding: 24px; border-radius: 12px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05); opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s; }
-.flow-step.visible { opacity: 1; transform: translateY(0); }
+/* Flow */
+.flow-container { display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; margin-top: 24px; text-align: center; }
 .flow-step h3 { margin-bottom: 12px; font-size: 16px; font-weight: 500; }
 .flow-step p { font-size: 14px; color: #555; }
 
 /* Testimonials */
 .testimonials-grid { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 24px; }
-.testimonial-card { flex: 1 1 250px; background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s; }
-.testimonial-card.visible { opacity: 1; transform: translateY(0); }
 .testimonial-card p { font-size: 14px; margin-bottom: 12px; }
 .testimonial-card .cn { font-size: 13px; color: #555; }
 
@@ -66,8 +75,9 @@ p { margin: 16px 0; font-size: 16px; }
 
 /* Responsive */
 @media(max-width:768px){
+    .container { padding: 70px 20px; }
+    .about-container, .services-grid, .flow-container, .testimonials-grid { flex-direction: column; }
     h1 { font-size: 28px; }
-    .about-container, .flow-container, .services-grid, .testimonials-grid { flex-direction: column; }
 }
 </style>
 </head>
@@ -91,7 +101,7 @@ Clarity in feeling. Strength in boundaries. <br>
         <p>I work with individuals who feel deeply but want to think clearly. My focus is on emotional structure and boundary awareness — understanding how patterns form, why they repeat, and how to regain stability without losing sensitivity.</p>
         <p>This is not therapy. It is a structured emotional reflection with direction.</p>
     </div>
-    <div class="about-right cn">
+    <div class="about-right">
         <p>我服务于情绪敏锐、却希望保持清醒的人。咨询聚焦于情绪结构与边界觉察 —— 理解模式如何形成、为何重复，并在不压抑敏感的前提下重建稳定。</p>
         <p>这不是心理治疗，而是有结构、有方向的情感思考。</p>
     </div>
@@ -185,8 +195,6 @@ Instagram: @clee.creativity
 
 <div class="footer">
 © 2026 河图
-</div>
-
 </div>
 
 <script>
