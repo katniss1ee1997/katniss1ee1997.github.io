@@ -3,95 +3,201 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name | Consultant</title>
+<title>Your Name | Emotional Structure & Boundary Consultant</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 <style>
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
     margin: 0;
-    padding: 0;
-    background: #ffffff;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(180deg, #ffffff 0%, #f7f7f7 100%);
     color: #111;
-    line-height: 1.6;
+    line-height: 1.8;
+    letter-spacing: 0.2px;
 }
+
 .container {
-    max-width: 760px;
-    margin: 80px auto;
-    padding: 0 20px;
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 100px 24px;
 }
+
 h1 {
-    font-size: 32px;
+    font-size: 34px;
     font-weight: 500;
+    margin-bottom: 8px;
 }
-h2 {
-    font-size: 18px;
-    margin-top: 60px;
-    letter-spacing: 1px;
+
+.subtitle {
+    font-size: 14px;
     text-transform: uppercase;
-    color: #666;
+    letter-spacing: 2px;
+    color: #777;
 }
+
+.hero-quote {
+    margin-top: 40px;
+    font-size: 18px;
+    color: #333;
+}
+
+.section {
+    margin-top: 100px;
+}
+
+.section h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #888;
+    margin-bottom: 30px;
+}
+
 p {
+    margin: 16px 0;
     font-size: 16px;
-    margin: 20px 0;
 }
+
+.cn {
+    color: #444;
+}
+
 .service {
-    margin: 30px 0;
+    margin-bottom: 36px;
 }
+
+.service-title {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+ul {
+    padding-left: 18px;
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
 .contact {
     margin-top: 40px;
 }
-.footer {
-    margin-top: 80px;
-    font-size: 14px;
-    color: #999;
-}
+
 a {
     color: #111;
     text-decoration: none;
     border-bottom: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    border-color: #111;
+}
+
+.footer {
+    margin-top: 120px;
+    font-size: 13px;
+    color: #aaa;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 70px 20px;
+    }
+    h1 {
+        font-size: 28px;
+    }
 }
 </style>
 </head>
+
 <body>
+
 <div class="container">
 
 <h1>Your Name</h1>
-<p>Independent Consultant</p>
+<div class="subtitle">Emotional Structure & Boundary Consultant</div>
 
+<div class="hero-quote">
+Clarity in feeling. Strength in boundaries. <br>
+<span class="cn">在情绪中保持清晰，在关系中建立边界。</span>
+</div>
+
+<div class="section">
 <h2>About</h2>
+
 <p>
-I provide structured, analytical consulting focused on clarity, direction and strategic decision-making.
-My work centers on helping individuals think clearly and move forward with intention.
+I work with individuals who feel deeply but want to think clearly.
+My focus is on emotional structure and boundary awareness — understanding how patterns form, why they repeat, and how to regain stability without losing sensitivity.
+</p>
+
+<p class="cn">
+我服务于情绪敏锐、却希望保持清醒的人。
+咨询聚焦于情绪结构与边界觉察 —— 理解模式如何形成、为何重复，并在不压抑敏感的前提下重建稳定。
 </p>
 
 <p>
-我提供结构化、理性且具战略思维的咨询服务，帮助个体建立清晰的判断与行动方向。
+This is not therapy. It is structured emotional reflection with direction.
 </p>
 
+<p class="cn">
+这不是心理治疗，而是有结构、有方向的情感思考。
+</p>
+</div>
+
+<div class="section">
 <h2>Services</h2>
 
 <div class="service">
-<strong>Strategic Clarity Consultation</strong><br>
-Clarifying goals, positioning and long-term direction.<br>
-目标梳理与长期方向规划。
+<div class="service-title">Emotional Pattern Mapping</div>
+<p>Identify recurring emotional structures and internal conflicts.</p>
+<p class="cn">梳理重复出现的情绪结构与内在冲突。</p>
 </div>
 
 <div class="service">
-<strong>Decision Framework Design</strong><br>
-Building rational models for complex personal decisions.<br>
-为复杂决策建立理性分析框架。
+<div class="service-title">Boundary Rebuilding</div>
+<p>Clarify limits, responsibility and relational balance.</p>
+<p class="cn">厘清边界、责任与关系平衡。</p>
 </div>
 
 <div class="service">
-<strong>Personal System Structuring</strong><br>
-Designing sustainable personal development systems.<br>
-构建可持续的个人成长结构。
+<div class="service-title">Attachment Awareness</div>
+<p>Understand attachment tendencies and stabilize emotional responses.</p>
+<p class="cn">理解依恋倾向，稳定情绪反应。</p>
 </div>
 
+</div>
+
+<div class="section">
+<h2>Working Style</h2>
+
+<ul>
+<li>Calm, structured dialogue</li>
+<li>Reflective questioning</li>
+<li>No impulsive advice</li>
+<li>No emotional dependency</li>
+</ul>
+
+<p class="cn">
+冷静对话 · 结构化提问 · 不提供冲动建议 · 不制造依赖关系
+</p>
+</div>
+
+<div class="section">
 <h2>Contact</h2>
+
 <div class="contact">
 Email: your@email.com <br>
 WeChat: yourID <br>
 Instagram: @yourname
+</div>
+
 </div>
 
 <div class="footer">
@@ -99,5 +205,6 @@ Instagram: @yourname
 </div>
 
 </div>
+
 </body>
 </html>
