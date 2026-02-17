@@ -13,22 +13,16 @@ body {
     background: #fafafa;
     color: #111;
     line-height: 1.6;
-    letter-spacing: 0.2px;
 }
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 80px 24px;
-}
+.container { max-width: 800px; margin: 0 auto; padding: 80px 24px; }
 
-/* Hero */
 h1 { font-size: 36px; font-weight: 500; margin-bottom: 8px; }
 .subtitle { font-size: 14px; text-transform: uppercase; letter-spacing: 2px; color: #777; }
 .hero-quote { font-size: 18px; color: #333; line-height: 1.6; margin-top: 24px; }
 .hero-quote .cn { display: block; margin-top: 12px; max-width: 600px; }
 
 /* Section Titles */
-.section { margin-top: 100px; }
+.section { margin-top: 80px; }
 .section h2 { font-size: 14px; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-bottom: 36px; }
 
 /* About split */
@@ -37,7 +31,7 @@ h1 { font-size: 36px; font-weight: 500; margin-bottom: 8px; }
 .about-left p { max-width: 650px; line-height: 1.55; }
 .about-right p { max-width: 600px; line-height: 1.7; color: #444; }
 
-/* Services / Flow / Testimonials Cards */
+/* Cards */
 .service-card, .flow-step, .testimonial-card {
     flex: 1 1 260px;
     background: #fff;
@@ -47,7 +41,13 @@ h1 { font-size: 36px; font-weight: 500; margin-bottom: 8px; }
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s, transform 0.6s;
-    min-height: 200px; /* 保持卡片高度一致 */
+    min-height: auto;
+}
+.service-card.visible,
+.flow-step.visible,
+.testimonial-card.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 .service-card:hover { transform: translateY(-4px); box-shadow: 0 6px 18px rgba(0,0,0,0.1); }
 .service-title { font-weight: 500; font-size: 16px; margin-bottom: 8px; }
